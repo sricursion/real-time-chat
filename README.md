@@ -10,7 +10,7 @@ Highlights:
 - 👌 Global state management with Zustand
 - 🐞 Error handling both on the server and on the client
 
-
+{ "updatedAt": { "$gt": ISODate("2025-04-23T23:06:20.034+00:00") } }
 ### Setup .env file
 
 ```js
