@@ -24,8 +24,28 @@ db.messages.find({ senderId: ObjectId("USER_ID_HERE") })
 db.messages.find({ image: { $exists: true, $ne: null } })
 
 
+#Eg mongodb queries
 
-{ "updatedAt": { "$gt": ISODate("2025-04-23T23:06:20.034+00:00") } }
+# 1. Find all messages sent between two specific users (replace USER_ID_1 and USER_ID_2)
+db.messages.find({
+  $or: [
+    { senderId: ObjectId("USER_ID_1"), receiverId: ObjectId("USER_ID_2") },
+    { senderId: ObjectId("USER_ID_2"), receiverId: ObjectId("USER_ID_1") }
+  ]
+}).sort({ createdAt: 1 })
+
+# 2. Find the 5 most recent messages globally
+db.messages.find().sort({ createdAt: -1 }).limit(5)
+
+# 3. Update a user's profile picture URL (replace USER_ID_HERE and NEW_PIC_URL)
+db.users.updateOne(
+  { _id: ObjectId("USER_ID_HERE") },
+  { $set: { profilePic: "NEW_PIC_URL" } }
+)
+
+# 4. Find all users who have not set a profile picture (assuming default is null or empty string)
+db.users.find({ profilePic: { $in: [null, ""] } })
+
 ### Setup .env file
 
 ```js
