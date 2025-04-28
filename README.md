@@ -9,6 +9,21 @@ Highlights:
 - 🚀 Online user status
 - 👌 Global state management with Zustand
 - 🐞 Error handling both on the server and on the client
+Eg mongodb shell commands:
+
+# 1. Find a user by their email address
+db.users.findOne({ email: "emma.thompson@example.com" })
+
+# 2. Count the total number of messages in the database
+db.messages.countDocuments()
+
+# 3. Find all messages sent by a specific user (replace 'USER_ID_HERE' with an actual user _id)
+db.messages.find({ senderId: ObjectId("USER_ID_HERE") })
+
+# 4. Find all messages that contain an image attachment
+db.messages.find({ image: { $exists: true, $ne: null } })
+
+
 
 { "updatedAt": { "$gt": ISODate("2025-04-23T23:06:20.034+00:00") } }
 ### Setup .env file
