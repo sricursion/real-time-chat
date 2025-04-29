@@ -1,5 +1,5 @@
 # ✨ Full Stack Realtime Chat App ✨
-
+# Deployment: https://real-time-chat-tphu.onrender.com/ (wait for a min before trying it out)
 
 Highlights:
 
