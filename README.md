@@ -1,5 +1,5 @@
 # ✨ Full Stack Realtime Chat App ✨
-# Deployment: https://real-time-chat-tphu.onrender.com/ (wait for a min before trying it out)
+
 #https://deepwiki.com/sz-codes/real-time-chat/  (visit this to understand the underlying app)
 
 Highlights:
