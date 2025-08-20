@@ -1,13 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend server for real-time chat application with Express.js, Socket.io, JWT authentication, and MongoDB integration",
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
-  "keywords": [],
+  "keywords": ["express", "socket.io", "jwt", "mongodb", "real-time", "chat", "backend"],
   "author": "",
   "type": "module",
   "license": "ISC",

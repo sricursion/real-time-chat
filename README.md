@@ -2,7 +2,17 @@
 
 #https://deepwiki.com/sz-codes/real-time-chat/  (visit this to understand the underlying app)
 
-Highlights:
+## LinkedIn Description
+
+🚀 **Real-Time Chat Application** - A modern, full-stack messaging platform built with the MERN stack and Socket.io, featuring instant messaging, user authentication, online status tracking, and image sharing capabilities. This project demonstrates proficiency in React.js, Node.js, MongoDB, real-time web technologies, and modern UI design with TailwindCSS.
+
+**Key Technologies:** MongoDB | Express.js | React.js | Node.js | Socket.io | JWT Authentication | Zustand State Management | TailwindCSS | Cloudinary
+
+**Features:** Real-time messaging • User authentication & authorization • Online/offline status • Image uploads • Responsive design • Error handling
+
+---
+
+## Highlights:
 
 - 🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
 - 🎃 Authentication && Authorization with JWT
